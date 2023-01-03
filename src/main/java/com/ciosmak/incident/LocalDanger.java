@@ -5,7 +5,7 @@ public class LocalDanger extends Incident
     public LocalDanger()
     {
         super();
-        this.numberOfFireTruckNeeded = 3;
+        this.numberOfFireTruckNeeded = 2;
     }
 
     @Override
