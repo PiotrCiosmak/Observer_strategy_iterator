@@ -1,27 +1,12 @@
 package com.ciosmak.incident;
 
-import com.ciosmak.Coordinate;
-
-import java.util.Random;
-
-public class Fire
+public class Fire extends Incident
 {
-    public Fire()
+    public Fire(Integer numberOfFireTruckNeeded)
     {
-        this.coordinate = new Coordinate();
-        this.isFalseAlarm = new Random().nextDouble() <= 0.05;
+        super();
+        this.numberOfFireTruckNeeded = 3;
     }
 
-    public Coordinate getCoordinate()
-    {
-        return coordinate;
-    }
-
-    public boolean isFalseAlarm()
-    {
-        return isFalseAlarm;
-    }
-
-    private final Coordinate coordinate;
-    private final boolean isFalseAlarm;
+    private final Integer numberOfFireTruckNeeded;
 }
