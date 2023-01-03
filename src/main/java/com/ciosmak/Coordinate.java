@@ -1,54 +1,38 @@
 package com.ciosmak;
 
+import java.util.Random;
+
 public class Coordinate
 {
     public Coordinate()
     {
-        //TODO random in range
+        double x1 = 50.154564013341734;
+        double y1 = 19.688292482742394;
+
+        double x2 = 49.95855025648944;
+        double y2 = 20.02470275868903;
+
+        Random random = new Random();
+        this.x = x1 + (x2 - x1) * random.nextDouble();
+        this.y = y1 + (y2 - y1) * random.nextDouble();
     }
 
-    public int getLatitudeDegrees()
+    public Coordinate(double x, double y)
     {
-        return latitudeDegrees;
+        this.x = x;
+        this.y = y;
     }
 
-    public void setLatitudeDegrees(int latitudeDegrees)
+    public double getX()
     {
-        this.latitudeDegrees = latitudeDegrees;
+        return x;
     }
 
-    public int getLatitudeMinute()
+    public double getY()
     {
-        return latitudeMinute;
+        return y;
     }
 
-    public void setLatitudeMinute(int latitudeMinute)
-    {
-        this.latitudeMinute = latitudeMinute;
-    }
-
-    public int getLongitudeDegrees()
-    {
-        return longitudeDegrees;
-    }
-
-    public void setLongitudeDegrees(int longitudeDegrees)
-    {
-        this.longitudeDegrees = longitudeDegrees;
-    }
-
-    public int getLongitudeMinute()
-    {
-        return longitudeMinute;
-    }
-
-    public void setLongitudeMinute(int longitudeMinute)
-    {
-        this.longitudeMinute = longitudeMinute;
-    }
-
-    private int latitudeDegrees;
-    private int latitudeMinute;
-    private int longitudeDegrees;
-    private int longitudeMinute;
+    private final double x;
+    private final double y;
 }
