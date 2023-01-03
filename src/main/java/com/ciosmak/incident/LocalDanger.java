@@ -2,7 +2,7 @@ package com.ciosmak.incident;
 
 public class LocalDanger extends Incident
 {
-    public LocalDanger(Integer numberOfFireTruckNeeded)
+    public LocalDanger()
     {
         super();
         this.numberOfFireTruckNeeded = 3;

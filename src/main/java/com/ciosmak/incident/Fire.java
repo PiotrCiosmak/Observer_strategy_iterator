@@ -2,7 +2,7 @@ package com.ciosmak.incident;
 
 public class Fire extends Incident
 {
-    public Fire(Integer numberOfFireTruckNeeded)
+    public Fire()
     {
         super();
         this.numberOfFireTruckNeeded = 3;
