@@ -8,5 +8,10 @@ public class Fire extends Incident
         this.numberOfFireTruckNeeded = 3;
     }
 
+    public Integer getNumberOfFireTruckNeeded()
+    {
+        return numberOfFireTruckNeeded;
+    }
+
     private final Integer numberOfFireTruckNeeded;
 }
