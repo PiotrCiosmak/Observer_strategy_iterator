@@ -1,23 +1,30 @@
 package com.ciosmak;
 
+import com.ciosmak.states.AvailableState;
+import com.ciosmak.states.FireTruckState;
+
 public class FireTruck
 {
+    private FireTruckState state;
+
     public FireTruck()
     {
-        isAvailable = true;
+        // Set the initial state to "available"
+        setState(new AvailableState(this));
     }
 
-    public boolean dispose()
+    public void setState(FireTruckState state)
     {
-        if (isAvailable)
-        {
-            System.out.println("POJAZD ZOSTAŁ DYSPONOWANY");
-            return true;
-        }
-        System.out.println("POJAZD ZAJĘTY");
-        return false;
+        this.state = state;
     }
 
-    private boolean isAvailable;
+    public void goToIncident()
+    {
+        state.goToIncident();
+    }
 
+    public void returnToStation()
+    {
+        state.returnToStation();
+    }
 }
