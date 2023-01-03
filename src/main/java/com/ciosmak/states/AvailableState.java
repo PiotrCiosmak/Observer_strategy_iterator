@@ -22,4 +22,9 @@ public class AvailableState implements FireTruckState
         // Can't return to station when already at the station
         System.out.println("Already at the station");
     }
+
+    public String getStateName()
+    {
+        return "available";
+    }
 }

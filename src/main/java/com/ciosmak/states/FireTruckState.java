@@ -5,4 +5,6 @@ public interface FireTruckState
     void goToIncident();
 
     void returnToStation();
+
+    String getStateName();
 }

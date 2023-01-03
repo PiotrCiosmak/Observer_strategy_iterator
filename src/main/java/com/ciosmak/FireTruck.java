@@ -18,6 +18,11 @@ public class FireTruck
         this.state = state;
     }
 
+    public FireTruckState getState()
+    {
+        return state;
+    }
+
     public void goToIncident()
     {
         state.goToIncident();
