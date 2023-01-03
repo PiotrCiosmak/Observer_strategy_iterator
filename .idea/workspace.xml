@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19b80254-c289-43be-814f-d72cd790e355" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciosmak/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciosmak/FireTruck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciosmak/RescueAndFirefightingUnits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciosmak/incident/Incident.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciosmak/incident/IncidentType.java" afterDir="false" />
+    <list default="true" id="19b80254-c289-43be-814f-d72cd790e355" name="Changes" comment="iterator done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciosmak/generator/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciosmak/observer/IncidentDispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciosmak/observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ciosmak/observer/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ciosmak/FireTruck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ciosmak/FireTruck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ciosmak/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ciosmak/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ciosmak/RescueAndFirefightingUnits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ciosmak/RescueAndFirefightingUnits.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -40,18 +44,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ciosmak.states" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,7 +70,9 @@
       <option name="presentableId" value="Default" />
       <updated>1672131950612</updated>
       <workItem from="1672131953384" duration="253000" />
-      <workItem from="1672357585202" duration="1945000" />
+      <workItem from="1672357585202" duration="1975000" />
+      <workItem from="1672444770041" duration="14404000" />
+      <workItem from="1672761861963" duration="14592000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1672358101915</created>
@@ -77,7 +88,119 @@
       <option name="project" value="LOCAL" />
       <updated>1672358142625</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added">
+      <created>1672419013200</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672419013200</updated>
+    </task>
+    <task id="LOCAL-00004" summary="done">
+      <created>1672450565182</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672450565183</updated>
+    </task>
+    <task id="LOCAL-00005" summary="done">
+      <created>1672450578361</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672450578361</updated>
+    </task>
+    <task id="LOCAL-00006" summary="done">
+      <created>1672764358642</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672764358642</updated>
+    </task>
+    <task id="LOCAL-00007" summary="done">
+      <created>1672764445404</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672764445405</updated>
+    </task>
+    <task id="LOCAL-00008" summary="done">
+      <created>1672764459581</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672764459581</updated>
+    </task>
+    <task id="LOCAL-00009" summary="State design pattern added">
+      <created>1672765852278</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672765852278</updated>
+    </task>
+    <task id="LOCAL-00010" summary="State design pattern added">
+      <created>1672765868257</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672765868257</updated>
+    </task>
+    <task id="LOCAL-00011" summary="done">
+      <created>1672768727291</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672768727291</updated>
+    </task>
+    <task id="LOCAL-00012" summary="done">
+      <created>1672768753980</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672768753980</updated>
+    </task>
+    <task id="LOCAL-00013" summary="done">
+      <created>1672768806352</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672768806352</updated>
+    </task>
+    <task id="LOCAL-00014" summary="done">
+      <created>1672769635531</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1672769635531</updated>
+    </task>
+    <task id="LOCAL-00015" summary="done">
+      <created>1672769833079</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1672769833079</updated>
+    </task>
+    <task id="LOCAL-00016" summary="done">
+      <created>1672770019416</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1672770019416</updated>
+    </task>
+    <task id="LOCAL-00017" summary="done">
+      <created>1672770378329</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1672770378329</updated>
+    </task>
+    <task id="LOCAL-00018" summary="iterator done">
+      <created>1672771304058</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1672771304058</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +208,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="added" />
+    <MESSAGE value="State design pattern added" />
+    <MESSAGE value="done" />
+    <MESSAGE value="iterator done" />
+    <option name="LAST_COMMIT_MESSAGE" value="iterator done" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ciosmak/Main.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="distanceOfTheEventFromRescueAndFirefightingUnit" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

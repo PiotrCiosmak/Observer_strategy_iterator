@@ -6,11 +6,13 @@ import com.ciosmak.states.FireTruckState;
 public class FireTruck
 {
     private FireTruckState state;
+    private Integer timeLockInSeconds;
 
     public FireTruck()
     {
         // Set the initial state to "available"
         setState(new AvailableState(this));
+        this.timeLockInSeconds = 0;
     }
 
     public void setState(FireTruckState state)
@@ -21,6 +23,16 @@ public class FireTruck
     public FireTruckState getState()
     {
         return state;
+    }
+
+    public Integer getTimeLockInSeconds()
+    {
+        return timeLockInSeconds;
+    }
+
+    public void setTimeLockInSeconds(Integer timeLockInSeconds)
+    {
+        this.timeLockInSeconds = timeLockInSeconds;
     }
 
     public void goToIncident()
