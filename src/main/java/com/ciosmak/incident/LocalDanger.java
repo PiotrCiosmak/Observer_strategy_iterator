@@ -8,6 +8,7 @@ public class LocalDanger extends Incident
         this.numberOfFireTruckNeeded = 3;
     }
 
+    @Override
     public Integer getNumberOfFireTruckNeeded()
     {
         return numberOfFireTruckNeeded;

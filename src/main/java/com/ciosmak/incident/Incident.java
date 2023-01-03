@@ -22,6 +22,8 @@ public abstract class Incident
         return isFalseAlarm;
     }
 
+    abstract public Integer getNumberOfFireTruckNeeded();
+
     private final Coordinate coordinate;
     private final boolean isFalseAlarm;
 }
